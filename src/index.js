@@ -1,7 +1,11 @@
+import "react-app-polyfill/ie9";
+import "react-app-polyfill/stable";
+
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App.jsx";
+// import App from "./App.jsx";
+import Dog from "./Dog";
 import * as serviceWorker from "./serviceWorker";
 
 import { Provider } from "react-redux";
@@ -10,7 +14,7 @@ import store from "./redux";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Dog />
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
